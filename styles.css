@@ -1,13 +1,62 @@
+html, body{
+    padding: 0; margin: 0;
+}
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     height: 100vh;
+    
 }
 .sidebar{
     display: flex;
     flex-direction: column;
     background-color: rgb(25, 146, 212);
     color: white;
+    font-weight: bold;
+}
+.sidebar .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 30px;
+}
+.sidebar .logo img{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+.category-nav{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.category-nav ul li:nth-child(1){
+    list-style-image: url('./Assets/home.png');
+}
+.category-nav ul li:nth-child(2){
+    list-style-image: url('./Assets/card-account-details-outline.png');
+}
+.category-nav ul li:nth-child(3){
+    list-style-image: url('./Assets/message.png');
+}
+.category-nav ul li:nth-child(4){
+    list-style-image: url('./Assets/history.png');
+}
+.category-nav ul li:nth-child(5){
+    list-style-image: url('./Assets/file-tree.png');
+}
+.category-nav ul li:nth-child(6){
+    list-style-image: url('./Assets/account-group.png');
+}
+.extra-nav ul li:nth-child(1){
+    list-style-image: url('./Assets/cog.png');
+}
+.extra-nav ul li:nth-child(2){ 
+    list-style-image: url('./Assets/help-box.png');
+}
+.extra-nav ul li:nth-child(3){ 
+    list-style-image: url('./Assets/shield-check-outline.png');
 }
 .content{
     display: grid;
