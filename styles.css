@@ -1,9 +1,10 @@
 html, body{
     padding: 0; margin: 0;
+    font-family: sans-serif;
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: auto 5fr;
     height: 100vh;
     
 }
@@ -13,12 +14,15 @@ html, body{
     background-color: rgb(25, 146, 212);
     color: white;
     font-weight: bold;
+    min-width: 250px;
+
 }
 .sidebar .logo{
     display: flex;
     gap: 10px;
     align-items: center;
     margin-right: 30px;
+    cursor: pointer;
 }
 .sidebar .logo img{
     margin-left: 10px;
@@ -28,9 +32,25 @@ html, body{
 .category-nav{
     display: flex;
     flex-direction: column;
-    
+    margin-left: 5px;
+}
+.category-nav ul li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.extra-nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.extra-nav ul li{
+    margin-bottom: 10px;
+    cursor: pointer;
     
 }
+
 .category-nav ul li:nth-child(1){
     list-style-image: url('./Assets/home.png');
 }
@@ -64,6 +84,69 @@ html, body{
 }
 .header{
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    
+}
+.header-top{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.header-top input{
+    flex-grow: 1;
+}
+.header-top .search-icon{
+    cursor: pointer;
+    margin-left: 40px;
+}
+.header-top .bell-icon{
+    cursor: pointer;
+    margin-left: 120px;
+}
+.header-top span{
+    cursor: pointer;
+    margin-right: 80px;
+    font-weight: bolder;
+}
+.header-top .avatar{
+    cursor: pointer;
+    width: 60px;
+    border-radius: 150px;
+
+}
+.header-bottom{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    margin-right: 60px;
+    margin-left: 30px;
+}
+.header-bottom span{
+    font-size: 13px;
+    font-weight: bolder;
+}
+.header-bottom p{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.header-bottom button{
+	border: none;
+	cursor: pointer;
+    height: 35px;
+    border-radius: 30px;
+    background-color:  rgb(25, 146, 212);
+    color: white;
+    width: 100px;
+    gap: 20px;
+    
+}
+.header-bottom img{
+    width: 100px;
 }
 .articles{
     background-color: rgb(226, 232, 240);
